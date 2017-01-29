@@ -1,0 +1,424 @@
+ /* Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Kelvin - Free Bootstrap 3 Resume Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+body {
+  	background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*---------------------------------------------------
+	3.1 Topbar
+---------------------------------------------------*/
+
+#section-topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	overflow: visible;
+	font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-topbar a {
+  color: #fff;
+}
+
+#topbar-inner {
+	background: #111;
+	line-height: 0;
+	text-align: center;
+}
+
+/*
+	Top Bar
+
+	By default, top navigation bar uses "fixed" position
+*/
+#section-topbar ul#nav {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+	border-right: 1px solid #222;
+
+	/* For IE, the outcast */
+	zoom:1;
+	*display: inline;
+}
+
+#section-topbar ul#nav > li {
+	display: block;
+    float: left;
+    padding: 0;
+}
+
+
+#section-topbar ul#nav a {
+  display: block;
+  font: normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 18px 20px 18px 20px;
+  border-left: 1px solid #222;
+  background: transparent;
+}
+
+	#section-topbar ul#nav a:hover {
+	  background: #222;
+	  text-decoration: none;
+	  border-left: 1px solid #111;
+	}
+
+	#section-topbar ul#nav .active a {
+		background: #44bbaa;
+		border-left: 1px solid #111;
+	}
+
+		#section-topbar ul#nav .active a:hover {
+			background: #44bbaa;
+		}
+#section-topbar i {
+	font-size: 25px;
+}
+/*---------------------------------------------------
+	SECTION WRAPS
+---------------------------------------------------*/
+
+/* Header Wrap */
+#headerwrap {
+	background: url(../img/header-bg.jpg) no-repeat center top;
+	margin-top: 54px;
+	padding-top:140px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+    background-size: 100%;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	font-size: 80px;
+	color: white;
+}
+
+#headerwrap h3 {
+	font-size: 20px;
+	color: white;
+}
+
+/* Intnro Wrap */
+
+#intro {
+	background: #2c3e50;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: white;
+} 
+
+#intro a {
+	color: white;
+}
+
+#intro h5, p {
+	color: white;
+}
+
+#intro i {
+	color: white;
+	font-size: 20px;
+	padding-right: 8px;
+	vertical-align: middle;
+}
+
+.side-title h5 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#skillswrap ul {
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+}
+
+#skillswrap ul li {
+	list-style: none;
+	width: 33%;
+	float: left;
+	margin-bottom: 1px;
+	color: #636363;
+}
+
+@media only screen and (min-width:401px) and (max-width:750px) { 
+	#skillswrap ul li {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width:400px) { 
+	#skillswrap ul li {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width:1200px) { 
+	.side-title h5 {
+		transform: rotate(-90deg);
+		font-size: 32px;
+		padding-right: 10px;
+		direction: rtl;
+	}
+}
+
+@media only screen and (max-width:1199px) { 
+	.side-title h5 {
+		font-size: 32px;
+		font-weight: bold;
+	}
+}
+
+#skillswrap ul li.w-100 {
+	width: 100%;
+}
+
+.content-skills h4, .content-skills h5 {
+	width: 100%;
+	float: left;
+	font-weight: 500;
+}
+
+.content-skills h4 {
+	margin-top: 30px;
+}
+
+.content-skills h5 {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.content-skills p {
+	width: 100%;
+	float: left;
+	padding-left: 20px;
+}
+
+#work-area h4 {
+	color: #34495e;
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+#work-area p {
+	margin-bottom: 5px;
+	padding-left: 10px;
+	line-height: 25px;
+}
+
+.portfolio-item {
+	margin-bottom: 40px;
+}
+
+.portfolio-item h6 {
+	font-size: 16px;
+}
+@media only screen and (max-width:1200px) { 
+	.image-area {
+		padding: 50px;
+	}
+}
+
+@media only screen and (max-width:580px) { 
+	.image-area {
+		padding: 30px;
+	}
+}
+
+.image-area{
+	position: relative;
+}
+.image-area img {
+	display: block;
+	transform: scale(1.0);
+	transition: all .15s linear;
+}
+.image-area img:hover{
+	transform: scale(1.1);
+	box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
+#footwrap {
+	background: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#footwrap p {
+	color: white;
+}
+
+#footwrap h5 {
+	color: white;
+}
+
+
+#footwrap p span {
+	font-weight: 700;
+}
+
+#footwrap i {
+	padding-right: 8px;
+	color: #1abc9c;
+}
+
+
+/* Global Values */
+.warning-title{
+	font-weight: bold;
+    font-size: 1.2em;
+}
+
+.desc {
+	padding-top: 50px;
+}
+
+.desc p {
+	color: #222222;
+	margin-bottom: 15px;
+}
+
+.desc p span {
+	color: #34495e;
+	font-weight: 700;
+}
+
+.desc span.badge {
+	padding: 6px;
+	color: white;
+	background: #34495e;
+	border-radius: 0;
+}
+
+.desc p.more {
+	color: #636363;
+}
+
+
+small {
+	font-size: 12px;
+}
+
+.animated.scale {
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+  transition: all 500ms linear;
+}
+
+.animated.scale.in-view {
+	transform: scale(1);
+  	opacity: 1;
+}
+
+@media only print { 
+	#section-topbar, #topbar-inner {
+		display: none;
+	}
+
+	#intro {
+		padding: 0;
+	}
+	
+	#headerwrap {
+		padding: 0;
+		margin: 0;
+		min-height: 0;
+		background: none;
+	}
+
+	#headerwrap h1 {
+		font-size: 48px;
+	}
+	#headerwrap h3 {
+		font-size: 40px;
+	}
+
+	.animated.scale {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	.portfolio-item img {
+		display: none;
+	}
+}

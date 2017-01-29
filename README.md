@@ -1,2 +1,3 @@
-# netojose
-My CV
+# My resume
+
+This is my CV repository
