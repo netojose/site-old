@@ -112,6 +112,12 @@ hr {
     border-left: 1px solid #222;
     background: transparent;
 }
+@media only screen and (max-width: 410px) {
+    #section-topbar ul#nav a {
+        font-size: 11px;
+        padding: 18px;
+    }
+}
 #section-topbar ul#nav a:hover {
     background: #222;
     text-decoration: none;
