@@ -242,6 +242,12 @@ p {
     float: left;
     padding-left: 20px;
 }
+.content-skills a {
+    color: #636363;
+}
+.content-skills a:hover {
+    color: #9A9A9A;
+}
 #work-area p {
     margin-bottom: 5px;
     padding-left: 10px;
@@ -282,6 +288,9 @@ p {
 }
 #footwrap p,
 #footwrap h2 {
+    color: white;
+}
+#footwrap a {
     color: white;
 }
 #footwrap p span {
@@ -357,4 +366,5 @@ small {
     .portfolio-item img {
         display: none;
     }
+    a[href]:after{content:none}
 }
